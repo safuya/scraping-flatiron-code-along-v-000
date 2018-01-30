@@ -33,7 +33,7 @@ class Scraper
         binding.pry
         c = Course.new
         c.title = course.css('h2').text
-        c.schedule = course.children[5].text
+        c.schedule = course.css('.date').text
         c.description = course.css('p').text
       end
     end
