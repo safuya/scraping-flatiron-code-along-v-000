@@ -27,6 +27,7 @@ class Scraper
   end
 
   def make_courses
+    Course.new
   end
 
 end
