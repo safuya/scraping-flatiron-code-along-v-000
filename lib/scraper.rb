@@ -31,7 +31,7 @@ class Scraper
     get_courses.each do |course|
       binding.pry
       c = Course.new
-      c.title = course.children[0].text
+      c.title = course.children[3].text
     end
   end
 
