@@ -34,6 +34,7 @@ class Scraper
         c = Course.new
         c.title = course.children[3].text
         c.schedule = course.children[5].text
+        c.description = course.css('p').text
       end
     end
   end
