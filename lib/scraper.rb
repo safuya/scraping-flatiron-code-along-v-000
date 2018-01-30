@@ -32,6 +32,7 @@ class Scraper
       binding.pry
       c = Course.new
       c.title = course.children[3].text
+      c.schedule = course.children[5].text
     end
   end
 
