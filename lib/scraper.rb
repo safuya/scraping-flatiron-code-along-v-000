@@ -23,7 +23,7 @@ class Scraper
   end
 
   def get_courses
-    get_page(html).css('article h2')
+    get_page.css('article h2')
   end
 
 end
