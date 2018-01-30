@@ -11,6 +11,6 @@ class Course
   end
 
   def self.all
-    @@all
+    @@courses
   end
 end
