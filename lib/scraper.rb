@@ -30,7 +30,7 @@ class Scraper
   def make_courses
     get_courses.each do |course|
       binding.pry
-      unless course.css('.empty').length > 0
+      if course.css('.empty').length == 0
         c = Course.new
         c.title = course.children[3].text
         c.schedule = course.children[5].text
