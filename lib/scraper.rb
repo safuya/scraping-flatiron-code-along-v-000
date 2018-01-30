@@ -32,7 +32,7 @@ class Scraper
       if course.css('.empty').length == 0
         binding.pry
         c = Course.new
-        c.title = course.children[3].text
+        c.title = course.css('h2').text
         c.schedule = course.children[5].text
         c.description = course.css('p').text
       end
